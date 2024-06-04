@@ -16,16 +16,22 @@ A typical compiler achieves this by following a series of steps:
 5. Optimizing
 6. Code Generation
 
-> [!NOTE] PS:
+> PS:
 > This project only focus in building a Lexer for OUR Programming Language, CleBeN.
 
 ## Project Description
 
-...
+**CleBeN** é uma linguagem de programação projetada para ser facilmente compreendida por
+humanos, utilizando uma sintaxe similar ao inglês falado. Seu principal propósito é facilitar o
+aprendizado de programação para iniciantes, tornando o código mais intuitivo e menos
+intimidador. Além disso, CleBeN é suficientemente poderosa para implementar algoritmos
+básicos e realizar tarefas comuns de programação.
 
 ## What We Learned
 
-...
+- Working in Group;
+- JFlex to Create a Lexical Analyzer
+- etc/
 
 ---
 
