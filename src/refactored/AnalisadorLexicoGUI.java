@@ -17,6 +17,8 @@ public class AnalisadorLexicoGUI {
     private JTextArea lineNumbers;
     private JTable tabelaSimbolosTable;
 
+    Font codeFont;
+
     public AnalisadorLexicoGUI() {
         criarInterface();
     }
@@ -31,7 +33,7 @@ public class AnalisadorLexicoGUI {
         JTabbedPane abas = new JTabbedPane();
 
         codigoTextArea = new JTextArea();
-        Font codeFont = new Font(Font.MONOSPACED, Font.PLAIN, 18);
+        codeFont = new Font(Font.MONOSPACED, Font.PLAIN, 18);
         codigoTextArea.setFont(codeFont);
         JScrollPane codigoScrollPane = new JScrollPane(codigoTextArea);
         codigoScrollPane.setPreferredSize(new Dimension(400, 300));
@@ -74,6 +76,8 @@ public class AnalisadorLexicoGUI {
         JScrollPane tabelaSimbolosScrollPane = new JScrollPane(tabelaSimbolosTable);
         tabelaSimbolosScrollPane.setPreferredSize(new Dimension(400, 300));
         abas.addTab("Tabela de Símbolos", tabelaSimbolosScrollPane);
+        tabelaSimbolosTable.setFont(codeFont);
+        tabelaSimbolosTable.setRowHeight(30);
 
         painelPrincipal.add(abas, BorderLayout.CENTER);
 
